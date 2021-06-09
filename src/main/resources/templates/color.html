@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Colors Form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Form</h1>
+<form action="#" th:action="@{/colors}" th:object="${color}" method="post">
+    <label>Color: </label>
+    <select th:field="*{colorName}">
+        <option th:each="p : ${listOfColors}" th:value="${p}" th:text="${p}"></option>
+    </select>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>
