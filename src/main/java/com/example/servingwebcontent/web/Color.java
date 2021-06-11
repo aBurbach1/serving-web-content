@@ -20,7 +20,7 @@ public class Color {
                 this.complement = "red";
                 break;
             default:
-                this.complement = "black";
+                this.complement = "Unable to process a result";
                 break;
         }
     }
