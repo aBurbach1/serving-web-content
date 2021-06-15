@@ -17,6 +17,10 @@ public class ColorsController {
         model.addAttribute("name", name);
         return "greeting";
     }
+
+    @GetMapping(value="/greeting-aaron")
+    public String greetingAaron() {return "greetingAaron";}
+
     @GetMapping(value="/red")
     public String color() {
         return "red";
