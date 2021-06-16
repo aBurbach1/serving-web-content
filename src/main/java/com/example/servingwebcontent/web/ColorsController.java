@@ -24,6 +24,9 @@ public class ColorsController {
     @GetMapping(value="/greeting-l")
     public String greetingL() {return "greetingL";}
 
+    @GetMapping(value="/greeting-zach")
+    public String greetingZach() {return "greetingZach";}
+
     @GetMapping(value="/red")
     public String color() {
         return "red";
